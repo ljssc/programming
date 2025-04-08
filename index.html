@@ -4,8 +4,92 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Основы JS</title>
-</head>
-<body>
     
+</head>
+<header>
+    
+</header>
+<body>
+    <h1>Язык JS</h1>
+
+
+    <script>
+        let str = "hello 'everybody'";
+
+        // массив
+        let arr = ["lol","lol","lol"];
+        let arrnu = ["mda","mda","mda"];
+
+        console.log(str);
+
+
+        for (step = 0; step < 10; step++)
+    {
+        console.log(step + "1");
+    }
+        console.log("задача 1");
+        let a = 16;
+        let b = 5;
+        console.log(a%b);
+        // мат функция
+        console.log("задача 2");
+        console.log(Math.round(16/5));
+
+        console.log("задача 3");
+        // вывод массива
+        for (let i = 0; i < arr.length; i += 1) {
+            console.log(arr[i]);
+        }
+        for (let n = 0; n < arrnu.length; n += 1) {
+            console.log(arrnu[n]);
+        }
+
+        // инкременты
+         console.log("задача 4");
+         a = 1;
+         b  = ++a;
+         console.log("a == " + a,"b == " + b);
+
+
+        // сумма чисел с клавиатуры
+
+        // let x1, x2,sum;
+
+        // x1 = parseFloat(prompt("введите 1 число",0));
+        // x2 = parseFloat(prompt("введите 2 число",0));
+        // // Преборазование типов данных
+        // sum = x1 + x2;
+        // alert("сумма равна " + sum);
+        
+        // задачки с пр 1
+
+        // let numberInFolder,numberOnPage, numberOfPages;
+
+        // numberInFolder = parseInt(prompt("Введите кол-во фото в папке", 20));
+        // numberOnPage = parseInt(prompt("Введите кол-во фотографий на странице", 5));
+        // numberOfPages = Math.ceil(numberInFolder/numberOnPage);
+        // alert("кол-во страниц в итоге   ---> " + numberOfPages);    
+
+
+        // задача пр 1 (2)
+        
+        /*Дано 6-ти значное число найти сумму цифр*/
+
+        // 345675 = 6(сот тыс) 5(дес тыс) 4(тыс) 3(сот) 2(дес) 1(ед)
+
+        let number, d1, d2,d3, d4,d5,d6;
+
+        number = parseInt(prompt("введите 6-значное число"));
+        d1 = number % 10; // единицы
+        d2 = Math.floor(number/10)%10;// десятки
+        d3 = Math.floor(number / 100)%10; // сотни
+        d4 = Math.floor(number / 1000)%10; // тыщи
+        d5 = Math.floor(number / 10000)%10; // десятки тыщ
+        d6 = Math.floor(number / 100000)%10; // сотни тыщ
+        alert ("Ваша сумма чисел ----->" + d1+d2+d3+d4+d5+d5 );
+    </script>
 </body>
+<footer>
+   
+</footer>
 </html>
