@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Простейшие программы</title>
+</head>
+<body>
+    <script>
+        // 1 задача
+        let radius, l, s;
+        radius = parseInt(prompt("Введите радиус окружности"))
+        l = Math.floor(2 * Math.PI * radius);
+        s = Math.floor(Math.PI * radius * radius);
+        alert("Ваша длина окружности --->  " + l + "\n" +
+        "Ваша площадь круга ----->   " + s);
+
+        // 2 задача
+
+        let km, metrs;
+
+        metrs = parseInt(prompt("Введите ваше расстояние в метрах"));
+        km = Math.round(metrs/1000);
+        alert("Ваше расстояние в км ----->   " + km);
+
+
+        // 3 задача
+
+        let number, rearrangement;
+        number = parseInt(prompt("Введите ваше 2 -ое число"));
+        rearrangement = Math.round (number % 10 * 10 + number/10);
+        alert("Ваше число в перестроенном виде ------> " + rearrangement);
+
+
+        </script>
+</body>
+</html>
