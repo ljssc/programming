@@ -6,18 +6,18 @@
      */
 
 
-    let x, y;
-    x = parseInt(prompt("Введите ваше 1 число"));
-    if (x > 0)
-    {
-        y = Math.pow(Math.sin(x),2);
-        alert(" y = sinx2 итог  "  + y);
-    }
-    else 
-    {
-        y = 1 - 2* (Math.pow(Math.sin(x),2));
-        alert("y = 1-2sinx2 в случае если вы ввели < 0 итог " + y);
-    }
+    // let x, y;
+    // x = parseInt(prompt("Введите ваше 1 число"));
+    // if (x > 0)
+    // {
+    //     y = Math.pow(Math.sin(x),2);
+    //     alert(" y = sinx2 итог  "  + y);
+    // }
+    // else 
+    // {
+    //     y = 1 - 2* (Math.pow(Math.sin(x),2));
+    //     alert("y = 1-2sinx2 в случае если вы ввели < 0 итог " + y);
+    // }
 }
 {
     /*. Дано трехзначное число. Определить:
@@ -45,7 +45,7 @@
             
             checktwo = 1;
         }
-        x = math.floor (x/10);
+        x = Math.floor (x/10);
 
     }
     if (checkone == 1 )
@@ -73,6 +73,21 @@
     г) произведение всех целых чисел от a до b (значения a и b вводятся
     с клавиатуры; b >= a).
     */  
+    
 
+    // условие a
+    let n = 1;
+    for (let i  = 8;i <=15; i++)
+    {
+        n += i*1;
 
+    }
+    alert ("Условие a = " + n);
+
+    // условие b
+    let a = parseInt(prompt("Введите число от 1 до 20"));
+    for (let i = 1; i <=20; i++)
+    {
+        
+    }
 }
